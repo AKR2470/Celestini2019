@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/circularProgressBarpm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        app:cpb_background_progressbar_color="#b6bbd8"
+        app:cpb_background_progressbar_width="5dp"
+        app:cpb_progress_direction="to_right"
+        app:cpb_progressbar_color="#3f51b5"
+        app:cpb_progressbar_width="10dp"
+        app:cpb_round_border="false" />
+
+    <TextView
+        android:id="@+id/textViewpm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 ug/m3"
+        android:layout_alignEnd="@+id/circularProgressBarpm"
+        android:layout_alignStart="@+id/circularProgressBarpm"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_alignBottom="@+id/circularProgressBarpm"
+        android:layout_alignTop="@+id/circularProgressBarpm"
+        tools:ignore="UnknownId" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_alignBottom="@+id/circularProgressBarpm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-110dp"
+        android:gravity="center"
+        android:text="Normal Range: 0 - 80 ug/m3" />
+</RelativeLayout>
